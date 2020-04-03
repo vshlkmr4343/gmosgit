@@ -1,0 +1,37 @@
+
+<ion-content padding class="background">
+  <div class="login-image">
+    <ion-img src="../../../assets/images/login_logo.png">
+    </ion-img>
+  </div>
+  <div class="login-btn">
+    <div>
+      <ion-button id="btn" expand="full" (click)="browse('actor')">BROWSE AS ACTOR</ion-button>
+    </div>
+    <div>
+      <ion-button id="btn" expand="full" (click)="browse('crew')">BROWSE AS CREW</ion-button>
+    </div>
+    <div>
+      <ion-button id="btn" expand="full" (click)="browse('producer')">BROWSE AS PRODUCER</ion-button>
+    </div>
+  </div>
+
+  <!-- <ion-footer>
+    <div>
+      <ion-row style="width: 100%;">
+        <ion-col size="6">
+          <ion-button expand="full">SIGN IN</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="full">JOIN FOR FREE</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-footer> -->
+  <div style="position: absolute; background-color: transparent; bottom: 0px; width: 100%">
+    <div class="row">
+    <button id="footer-btn1" class="col col-50 button button-block" (click)="signIn()">SIGN IN</button>
+    <button id="footer-btn2" class="col col-50 button button-block" (click)="signUp()">JOIN FOR FREE</button>
+    </div>
+</div> 
+</ion-content>

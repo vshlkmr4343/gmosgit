@@ -1,0 +1,164 @@
+
+<app-header></app-header>
+<ion-content style="--background: #F5F5F5 !important;">
+  <ion-item lines="full" class="fixed-heading">
+	<ion-row style="width: 100%;">
+		<ion-col size="4" (click)="highlight('Crew Gigs')"  [ngClass]="{'highlightGig': isHighlited=='Crew Gigs'}" class="selectedGig">
+			<span style="font-size: 14px;">Crew Gigs</span>
+		</ion-col>
+		<ion-col size="4" (click)="highlight('Casting Calls')" [ngClass]="{'highlightGig': isHighlited=='Casting Calls'}" class="selectedGig">
+			<span style="font-size: 14px;">Casting Calls</span>
+		</ion-col>
+		<ion-col size="2">
+		</ion-col>
+		<ion-col size="2">
+			<ion-button size="small" id="filterBtn" (click)="search()">Filter</ion-button>
+		</ion-col>
+	</ion-row>
+</ion-item>
+
+  <div class="box h-100" (click)="gigsDetail()">
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6">
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Type</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> Posted Date </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="full" >
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-row style="width: 100%;">
+        <ion-col size="6" class="box-content">
+          <p class="box-title">New Crew Gig Post</p>
+          <p class="box-heading">Location: Teaticket Hwy</p>
+          <p class="box-heading">Payments: Unpaid</p>
+          <p class="box-heading">Number of Days: 5</p>
+        </ion-col>
+        <ion-col size="2">
+          <p class="box-heading">Crew</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="box-heading"> 24 June 2019 </p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item lines="full" >
+    
+    
+      <!-- <pagination-controls
+      (pageChange)="pageChanged($event)"
+      maxSize="2"
+      previousLabel="Previous"
+      nextLabel="Next"
+     >
+</pagination-controls> -->
+   
+    </ion-item>
+  </div>
+ 
+</ion-content>
