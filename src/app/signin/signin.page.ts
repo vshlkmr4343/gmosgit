@@ -19,7 +19,7 @@ export class SigninPage implements OnInit {
     this.router.navigateByUrl('/user')
   }
 
- forgotPassword(){
+  forgotPassword(){
     this.router.navigateByUrl('/user/forgot-password')
   }
 }

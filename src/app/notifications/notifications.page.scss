@@ -3,7 +3,6 @@
     margin-right: 0;
     margin-bottom: 5px;
     margin-top: 5px;
-    font-size: 13px;
     line-height: 20px;
     text-overflow: inherit;
     overflow: inherit;
@@ -13,9 +12,7 @@
 .details{
     margin-left: 0;
     margin-right: 0;
-   // margin-top: 6px;
     margin-bottom: 5px;
-    font-size: 13px;
     line-height: 20px;
     text-overflow: inherit;
     overflow: inherit;
@@ -31,9 +28,14 @@
     overflow: inherit;
 }
 .heading{
-   // margin-top: 12px;
+    margin-top: 12px;
     margin-bottom: 0;
-    margin-left: 10px;
-    font-size: 16px;
+    margin-left: 16px;
+    font-size: 15px;
+    margin-right: auto;
+}
+ion-card{
+    border-radius: 0px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./artist-profile.component.scss'],
 })
 export class ArtistProfileComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {}
+  show(url){
+
+  }
 
 }

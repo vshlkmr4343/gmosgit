@@ -1,5 +1,5 @@
-// @import '../../assets/css/main-theme.css';
-// @import '../../assets/css/style.css';
+@import '../../assets/css/main-theme.css';
+@import '../../assets/css/style.css';
 
 a:link, a:visited {
     color: #919294;
@@ -28,12 +28,9 @@ a:link, a:visited {
     --background: #C1270B !important;
   }
   ion-card-title{
-      font-size: 12px;
       font-weight: bold;;
   }
-  p{
-    font-size: 12px;
-  }
+ 
   .profile{
       // padding: 0px;
       // margin: -11px;

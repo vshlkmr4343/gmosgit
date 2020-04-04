@@ -452,7 +452,27 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-app>\n\t<ion-split-pane contentId=\"main-content\">\n\t\t<ion-menu contentId=\"main-content\" type=\"overlay\">\n\t\t\t<ion-item style=\"--padding: 0\" color=\"dark\">\n\t\t\t\t<ion-avatar slot=\"start\">\n\t\t\t\t\t<img src=\"assets/images/talent1.png\">\n\t\t\t\t</ion-avatar>\n\t\t\t\t<ion-label>\n\t\t\t\t\t<h2>Dylan Larkin</h2>\n\t\t\t\t\t<p>dylanlarkin@email.com</p>\n\t\t\t\t</ion-label>\n\t\t\t</ion-item>\n\t\t\t<ion-content>\n\t\t\t\t<ion-list *ngIf=\"!isSubmenuOpen\" id=\"inbox-list\">\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\">\n\t\t\t\t\t\t<div class=\"gigPost\" [routerLink]=\"['gigs/post']\">\n\t\t\t\t\t\t\t<ion-icon name=\"add\" color=\"light\"></ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\">POST A GIG</ion-label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages; let i = index\">\n\t\t\t\t\t\t<ion-item *ngIf=\"p.title == 'MESSAGAES' || p.title == 'NOTIFICATIONS'\"\n\t\t\t\t\t\t\t(click)=\"selectedIndex = i\" lines=\"none\"  [routerLink]=\"[p.url]\"\n\t\t\t\t\t\t\tdetail=\"false\" [class.selected]=\"selectedIndex == i\" style=\"--background:#000000\">\n\t\t\t\t\t\t\t<ion-badge slot=\"end\" color=\"medium\">11</ion-badge>\n\t\t\t\t\t\t\t<ion-label color=\"light\">{{p.title}}</ion-label>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t<ion-item\n\t\t\t\t\t\t\t*ngIf=\"p.title != 'MESSAGAES' && p.title != 'NOTIFICATIONS' && p.title != 'MY PROFILE' && p.title != 'MORE'\"\n\t\t\t\t\t\t\t(click)=\"selectedIndex = i\" lines=\"none\" routerDirection=\"root\" [routerLink]=\"[p.url]\"\n\t\t\t\t\t\t\tdetail=\"false\" [class.selected]=\"selectedIndex == i\" style=\"--background:#000000\">\n\t\t\t\t\t\t\t<ion-icon slot=\"end\" [ios]=\"p.icon + '-outline'\" [md]=\"p.icon + '-sharp'\" color=\"light\">\n\t\t\t\t\t\t\t</ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\">{{p.title}}</ion-label>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t<div style=\"background: #aaaaaa;height: 1px;\"></div>\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t\t<ion-item (click)=\"open('MY PROFILE')\" lines=\"none\" detail=\"false\" style=\"--background:#000000\">\n\t\t\t\t\t\t<ion-label color=\"light\">MY PROFILE</ion-label>\n\t\t\t\t\t\t<ion-icon name=\"arrow-forward\" slot=\"end\" color=\"light\"></ion-icon>\n\t\t\t\t\t</ion-item>\n\t\t\t\t\t<div style=\"background: #aaaaaa;height: 1px;\"></div>\n\t\t\t\t\t<ion-item (click)=\"open('MORE')\" lines=\"none\" detail=\"false\" style=\"--background:#000000\">\n\t\t\t\t\t\t<ion-label color=\"light\">MORE</ion-label>\n\t\t\t\t\t\t<ion-icon name=\"arrow-forward\" slot=\"end\" color=\"light\"></ion-icon>\n\t\t\t\t\t</ion-item>\n\t\t\t\t\t<div style=\"background: #aaaaaa;height: 1px;\"></div>\n\t\t\t\t</ion-list>\n\t\t\t\t<ion-list *ngIf=\"isSubmenuOpen\" id=\"inbox-list\">\n\t\t\t\t\t<ion-item style=\"--background:#000000\" (click)=\"back()\">\n\t\t\t\t\t\t<ion-icon name=\"arrow-back\" color=\"light\"></ion-icon>\n\t\t\t\t\t\t<ion-label color=\"light\" style=\"padding-left:5px\">BACK</ion-label>\n\t\t\t\t\t</ion-item>\n\t\t\t\t\t<div style=\"background: #aaaaaa;height: 1px;\"></div>\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\" *ngFor=\"let s of subMenuPages; let j = index\"  [routerLink]=\"[s.url]\">\n\t\t\t\t\t\t<ion-item lines=\"none\" detail=\"false\" [class.selected]=\"selectedIndex == j\"\n\t\t\t\t\t\t\tstyle=\"--background:#000000\">\n\t\t\t\t\t\t\t<ion-icon slot=\"end\" [ios]=\"s.icon + '-outline'\" [md]=\"s.icon + '-sharp'\" color=\"light\">\n\t\t\t\t\t\t\t</ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\" *ngIf=\"s.title !='LOGOUT'\" >{{s.title}}</ion-label>\n\t\t\t\t\t\t\t<ion-label color=\"light\" *ngIf=\"s.title =='LOGOUT'\" (click)=\"logout()\">{{s.title}}</ion-label>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t<div style=\"background: #aaaaaa;height: 1px;\"></div>\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t</ion-list>\n\t\t\t</ion-content>\n\t\t</ion-menu>\n\t\t<ion-router-outlet id=\"main-content\"></ion-router-outlet>\n\t</ion-split-pane>\n</ion-app>";
+    __webpack_exports__["default"] = "<ion-app>\n\t<ion-split-pane contentId=\"main-content\">\n\t\t<ion-menu contentId=\"main-content\" type=\"overlay\">\n\t\t\t<ion-item style=\"--padding: 0\" color=\"dark\">\n\t\t\t\t<ion-avatar slot=\"start\">\n\t\t\t\t\t<img src=\"assets/images/talent1.png\">\n\t\t\t\t</ion-avatar>\n\t\t\t\t<ion-label>\n\t\t\t\t\t<h2>Dylan Larkin</h2>\n\t\t\t\t\t<p>dylanlarkin@email.com</p>\n\t\t\t\t</ion-label>\n\t\t\t</ion-item>\n\t\t\t<ion-content>\n\t\t\t\t<ion-list *ngIf=\"!isSubmenuOpen\" id=\"inbox-list\">\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\">\n\t\t\t\t\t\t<div class=\"gigPost\" [routerLink]=\"['gigs/post']\">\n\t\t\t\t\t\t\t<ion-icon name=\"add\" color=\"light\"></ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\">POST A GIG</ion-label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages; let i = index\">\n\t\t\t\t\t\t<ion-item *ngIf=\"p.title == 'MESSAGES' || p.title == 'NOTIFICATIONS'\"\n\t\t\t\t\t\t\t(click)=\"selectedIndex = i\" lines=\"none\" [routerLink]=\"[p.url]\" detail=\"false\"\n\t\t\t\t\t\t\t[class.selected]=\"selectedIndex == i\" class=\"bottomBorder\">\n\t\t\t\t\t\t\t<ion-badge slot=\"end\" color=\"medium\">11</ion-badge>\n\t\t\t\t\t\t\t<ion-label color=\"light\">{{p.title}}</ion-label>\n\t\t\t\t\t\t</ion-item>\n\n\t\t\t\t\t\t<ion-item\n\t\t\t\t\t\t\t*ngIf=\"p.title != 'MESSAGES' && p.title != 'NOTIFICATIONS' && p.title != 'MY PROFILE' && p.title != 'MORE'\"\n\t\t\t\t\t\t\t(click)=\"selectedIndex = i\" lines=\"none\" routerDirection=\"root\" [routerLink]=\"[p.url]\"\n\t\t\t\t\t\t\tdetail=\"false\" [class.selected]=\"selectedIndex == i\" class=\"bottomBorder\">\n\t\t\t\t\t\t\t<ion-icon slot=\"end\" [ios]=\"p.icon + '-outline'\" [md]=\"p.icon + '-sharp'\" color=\"light\">\n\t\t\t\t\t\t\t</ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\">{{p.title}}</ion-label>\n\t\t\t\t\t\t</ion-item>\n\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t\t<ion-item (click)=\"open('MY PROFILE')\" lines=\"none\" detail=\"false\" class=\"bottomBorder\">\n\t\t\t\t\t\t<ion-label color=\"light\">MY PROFILE</ion-label>\n\t\t\t\t\t\t<ion-icon name=\"arrow-forward\" slot=\"end\" color=\"light\"></ion-icon>\n\t\t\t\t\t</ion-item>\n\t\t\t\t\t<ion-item (click)=\"open('MORE')\" lines=\"none\" detail=\"false\" class=\"bottomBorder\">\n\t\t\t\t\t\t<ion-label color=\"light\">MORE</ion-label>\n\t\t\t\t\t\t<ion-icon name=\"arrow-forward\" slot=\"end\" color=\"light\"></ion-icon>\n\t\t\t\t\t</ion-item>\n\t\t\t\t</ion-list>\n\t\t\t\t<ion-list *ngIf=\"isSubmenuOpen\" id=\"inbox-list\">\n\t\t\t\t\t<ion-item class=\"bottomBorder\" (click)=\"back()\">\n\t\t\t\t\t\t<ion-icon name=\"arrow-back\" color=\"light\"></ion-icon>\n\t\t\t\t\t\t<ion-label color=\"light\" style=\"padding-left:5px\">BACK</ion-label>\n\t\t\t\t\t</ion-item>\n\n\t\t\t\t\t<ion-menu-toggle auto-hide=\"false\" *ngFor=\"let s of subMenuPages; let j = index\"\n\t\t\t\t\t\t[routerLink]=\"[s.url]\">\n\t\t\t\t\t\t<ion-item lines=\"none\" detail=\"false\" [class.selected]=\"selectedIndex == j\"\n\t\t\t\t\t\t\tclass=\"bottomBorder\">\n\t\t\t\t\t\t\t<ion-icon slot=\"end\" [ios]=\"s.icon + '-outline'\" [md]=\"s.icon + '-sharp'\" color=\"light\">\n\t\t\t\t\t\t\t</ion-icon>\n\t\t\t\t\t\t\t<ion-label color=\"light\" *ngIf=\"s.title !='LOGOUT'\">{{s.title}}</ion-label>\n\t\t\t\t\t\t\t<ion-label color=\"light\" *ngIf=\"s.title =='LOGOUT'\" (click)=\"logout()\">{{s.title}}\n\t\t\t\t\t\t\t</ion-label>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t</ion-menu-toggle>\n\t\t\t\t</ion-list>\n\t\t\t</ion-content>\n\t\t</ion-menu>\n\t\t<ion-router-outlet id=\"main-content\"></ion-router-outlet>\n\t</ion-split-pane>\n</ion-app>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/shared/back-header/back-header.component.html":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/shared/back-header/back-header.component.html ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppSharedBackHeaderBackHeaderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar style=\"--background: #000000;\">\n    <ion-row style=\"width: 100%;\">\n      <ion-col size=\"2\">\n        <ion-buttons (click)=\"back()\">\n          <ion-button>\n            <ion-icon name=\"arrow-back\" color=\"light\"></ion-icon>\n          </ion-button>\n        </ion-buttons>\n      </ion-col>\n      <ion-col size=\"8\">\n        <ion-img class=\"logoIcon\" src=\"assets/images/logo.png\"></ion-img>\n      </ion-col>\n      <ion-col size=\"2\">\n        <ion-menu-button style=\"--color:#ffffff\"></ion-menu-button>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>";
     /***/
   },
 
@@ -472,7 +492,7 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header *ngIf=\"!title\">\n  <ion-toolbar style=\"--background: #000000;\">\n    <ion-buttons slot=\"end\">\n      <ion-menu-button style=\"--color:#ffffff\"></ion-menu-button>\n    </ion-buttons>\n    <ion-buttons slot=\"start\" (click)=\"back()\">\n      <ion-button color=\"light\">\n        <ion-icon name=\"arrow-back\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n    <ion-img class=\"logoIcon\" src=\"assets/images/logo.png\" slot=\"start\"></ion-img>\n  </ion-toolbar>\n</ion-header>\n\n<ion-header *ngIf=\"title\">\n  <ion-toolbar style=\"--background: #000000;\">\n    <ion-buttons *ngIf=\"title !='signin'\" slot=\"end\" (click)=\"close()\">\n      <ion-button color=\"light\">\n        <ion-icon name=\"close-outline\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n    <ion-img class=\"logoIcon\"  src=\"assets/images/logo.png\" slot=\"start\"></ion-img>\n  </ion-toolbar>\n</ion-header>";
+    __webpack_exports__["default"] = "<ion-header *ngIf=\"!title\">\n  <ion-toolbar style=\"--background: #000000;\">\n    <ion-row style=\"width: 100%;\">\n      <ion-col size=\"2\">\n      </ion-col>\n      <ion-col size=\"8\">\n        <ion-img class=\"logoIcon\" src=\"assets/images/logo.png\"></ion-img>\n      </ion-col>\n      <ion-col size=\"2\">\n        <ion-menu-button style=\"--color:#ffffff\"></ion-menu-button>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n<ion-header *ngIf=\"title\">\n  <ion-toolbar style=\"--background: #000000;\">\n    <ion-row style=\"width: 100%;\">\n      <ion-col size=\"2\">\n      </ion-col>\n      <ion-col size=\"8\">\n        <ion-img class=\"logoIcon\" src=\"assets/images/logo.png\"></ion-img>\n      </ion-col>\n      <ion-col size=\"2\">\n        <ion-buttons (click)=\"close()\">\n          <ion-button color=\"light\">\n            <ion-icon name=\"close-outline\"></ion-icon>\n          </ion-button>\n        </ion-buttons>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>";
     /***/
   },
 
@@ -1085,7 +1105,7 @@
 
     const routes = [{
       path: '',
-      redirectTo: 'signin',
+      redirectTo: 'user',
       pathMatch: 'full'
     }, {
       path: 'user',
@@ -1170,7 +1190,7 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "ion-menu {\n  --background:#222428;\n}\n\n.list-md {\n  margin-left: 0;\n  margin-right: 0;\n  margin-top: 0;\n  margin-bottom: 0;\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0px !important;\n  padding-bottom: 0px !important;\n  background: var(--ion-item-background, var(--ion-background-color, #fff));\n}\n\n.gigPost {\n  background: #C1270B;\n  text-align: center;\n  padding: 10px;\n}\n\nion-content {\n  --background:#000000 !important;\n  color: 0;\n}\n\nion-avatar {\n  height: 80px;\n  width: 80px;\n  padding: 5px;\n}\n\n.divBack {\n  background: #000000;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2hhbnNhcmthci9Eb2N1bWVudHMvVmlzaGFsL0xpdmVBcHBzL0dNT1MvZ21vcyBjb3B5L3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxvQkFBQTtBQ0FGOztBREdBO0VBQ0UsY0FBQTtFQUNBLGVBQUE7RUFDQSxhQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSwyQkFBQTtFQUNBLDhCQUFBO0VBQ0EseUVBQUE7QUNBRjs7QURHQTtFQUNFLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0FDQUY7O0FER0E7RUFDRSwrQkFBQTtFQUNBLFFBQUE7QUNBRjs7QURJQTtFQUNFLFlBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtBQ0RGOztBRElBO0VBQ0UsbUJBQUE7QUNERiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW9uLW1lbnV7XG4gIC0tYmFja2dyb3VuZDojMjIyNDI4O1xufVxuXG4ubGlzdC1tZCB7XG4gIG1hcmdpbi1sZWZ0OiAwO1xuICBtYXJnaW4tcmlnaHQ6IDA7XG4gIG1hcmdpbi10b3A6IDA7XG4gIG1hcmdpbi1ib3R0b206IDA7XG4gIHBhZGRpbmctbGVmdDogMDtcbiAgcGFkZGluZy1yaWdodDogMDtcbiAgcGFkZGluZy10b3A6IDBweCAhaW1wb3J0YW50OyBcbiAgcGFkZGluZy1ib3R0b206IDBweCAhaW1wb3J0YW50O1xuICBiYWNrZ3JvdW5kOiB2YXIoLS1pb24taXRlbS1iYWNrZ3JvdW5kLCB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvciwgI2ZmZikpO1xufVxuXG4uZ2lnUG9zdHtcbiAgYmFja2dyb3VuZDogI0MxMjcwQjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG5pb24tY29udGVudHtcbiAgLS1iYWNrZ3JvdW5kOiMwMDAwMDAgIWltcG9ydGFudDtcbiAgY29sb3I6IHJlZCgkY29sb3I6ICMwMDAwMDApO1xufVxuXG5cbmlvbi1hdmF0YXJ7XG4gIGhlaWdodDo4MHB4O1xuICB3aWR0aDogODBweDtcbiAgcGFkZGluZzo1cHhcbn1cblxuLmRpdkJhY2t7XG4gIGJhY2tncm91bmQ6ICMwMDAwMDA7XG59XG4iLCJpb24tbWVudSB7XG4gIC0tYmFja2dyb3VuZDojMjIyNDI4O1xufVxuXG4ubGlzdC1tZCB7XG4gIG1hcmdpbi1sZWZ0OiAwO1xuICBtYXJnaW4tcmlnaHQ6IDA7XG4gIG1hcmdpbi10b3A6IDA7XG4gIG1hcmdpbi1ib3R0b206IDA7XG4gIHBhZGRpbmctbGVmdDogMDtcbiAgcGFkZGluZy1yaWdodDogMDtcbiAgcGFkZGluZy10b3A6IDBweCAhaW1wb3J0YW50O1xuICBwYWRkaW5nLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQ6IHZhcigtLWlvbi1pdGVtLWJhY2tncm91bmQsIHZhcigtLWlvbi1iYWNrZ3JvdW5kLWNvbG9yLCAjZmZmKSk7XG59XG5cbi5naWdQb3N0IHtcbiAgYmFja2dyb3VuZDogI0MxMjcwQjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG5pb24tY29udGVudCB7XG4gIC0tYmFja2dyb3VuZDojMDAwMDAwICFpbXBvcnRhbnQ7XG4gIGNvbG9yOiAwO1xufVxuXG5pb24tYXZhdGFyIHtcbiAgaGVpZ2h0OiA4MHB4O1xuICB3aWR0aDogODBweDtcbiAgcGFkZGluZzogNXB4O1xufVxuXG4uZGl2QmFjayB7XG4gIGJhY2tncm91bmQ6ICMwMDAwMDA7XG59Il19 */";
+    __webpack_exports__["default"] = "ion-menu {\n  --background:#222428;\n}\n\n.list-md {\n  margin-left: 0;\n  margin-right: 0;\n  margin-top: 0;\n  margin-bottom: 0;\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0px !important;\n  padding-bottom: 0px !important;\n  background: var(--ion-item-background, var(--ion-background-color, #fff));\n}\n\n.gigPost {\n  background: #C1270B;\n  text-align: center;\n  padding: 10px;\n}\n\nion-content {\n  --background:#000000 !important;\n  color: 0;\n}\n\nion-avatar {\n  height: 80px;\n  width: 80px;\n  padding: 5px;\n}\n\n.divBack {\n  background: #000000;\n}\n\n.bottomBorder {\n  --background:#000000;\n  border-bottom: 1px solid #ffffff;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2hhbnNhcmthci9Eb2N1bWVudHMvVmlzaGFsL0xpdmVBcHBzL0dNT1MvZ21vc2dpdC9zcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0Usb0JBQUE7QUNBRjs7QURHQTtFQUNFLGNBQUE7RUFDQSxlQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsMkJBQUE7RUFDQSw4QkFBQTtFQUNBLHlFQUFBO0FDQUY7O0FER0E7RUFDRSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtBQ0FGOztBREdBO0VBQ0UsK0JBQUE7RUFDQSxRQUFBO0FDQUY7O0FESUE7RUFDRSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUNERjs7QURJQTtFQUNFLG1CQUFBO0FDREY7O0FES0E7RUFDRSxvQkFBQTtFQUNDLGdDQUFBO0FDRkgiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbmlvbi1tZW51e1xuICAtLWJhY2tncm91bmQ6IzIyMjQyODtcbn1cblxuLmxpc3QtbWQge1xuICBtYXJnaW4tbGVmdDogMDtcbiAgbWFyZ2luLXJpZ2h0OiAwO1xuICBtYXJnaW4tdG9wOiAwO1xuICBtYXJnaW4tYm90dG9tOiAwO1xuICBwYWRkaW5nLWxlZnQ6IDA7XG4gIHBhZGRpbmctcmlnaHQ6IDA7XG4gIHBhZGRpbmctdG9wOiAwcHggIWltcG9ydGFudDsgXG4gIHBhZGRpbmctYm90dG9tOiAwcHggIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZDogdmFyKC0taW9uLWl0ZW0tYmFja2dyb3VuZCwgdmFyKC0taW9uLWJhY2tncm91bmQtY29sb3IsICNmZmYpKTtcbn1cblxuLmdpZ1Bvc3R7XG4gIGJhY2tncm91bmQ6ICNDMTI3MEI7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuaW9uLWNvbnRlbnR7XG4gIC0tYmFja2dyb3VuZDojMDAwMDAwICFpbXBvcnRhbnQ7XG4gIGNvbG9yOiByZWQoJGNvbG9yOiAjMDAwMDAwKTtcbn1cblxuXG5pb24tYXZhdGFye1xuICBoZWlnaHQ6ODBweDtcbiAgd2lkdGg6IDgwcHg7XG4gIHBhZGRpbmc6NXB4XG59XG5cbi5kaXZCYWNre1xuICBiYWNrZ3JvdW5kOiAjMDAwMDAwO1xufVxuXG5cbi5ib3R0b21Cb3JkZXJ7XG4gIC0tYmFja2dyb3VuZDojMDAwMDAwO1xuICAgYm9yZGVyLWJvdHRvbTogIDFweCBzb2xpZCAjZmZmZmZmO1xufVxuIiwiaW9uLW1lbnUge1xuICAtLWJhY2tncm91bmQ6IzIyMjQyODtcbn1cblxuLmxpc3QtbWQge1xuICBtYXJnaW4tbGVmdDogMDtcbiAgbWFyZ2luLXJpZ2h0OiAwO1xuICBtYXJnaW4tdG9wOiAwO1xuICBtYXJnaW4tYm90dG9tOiAwO1xuICBwYWRkaW5nLWxlZnQ6IDA7XG4gIHBhZGRpbmctcmlnaHQ6IDA7XG4gIHBhZGRpbmctdG9wOiAwcHggIWltcG9ydGFudDtcbiAgcGFkZGluZy1ib3R0b206IDBweCAhaW1wb3J0YW50O1xuICBiYWNrZ3JvdW5kOiB2YXIoLS1pb24taXRlbS1iYWNrZ3JvdW5kLCB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvciwgI2ZmZikpO1xufVxuXG4uZ2lnUG9zdCB7XG4gIGJhY2tncm91bmQ6ICNDMTI3MEI7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuaW9uLWNvbnRlbnQge1xuICAtLWJhY2tncm91bmQ6IzAwMDAwMCAhaW1wb3J0YW50O1xuICBjb2xvcjogMDtcbn1cblxuaW9uLWF2YXRhciB7XG4gIGhlaWdodDogODBweDtcbiAgd2lkdGg6IDgwcHg7XG4gIHBhZGRpbmc6IDVweDtcbn1cblxuLmRpdkJhY2sge1xuICBiYWNrZ3JvdW5kOiAjMDAwMDAwO1xufVxuXG4uYm90dG9tQm9yZGVyIHtcbiAgLS1iYWNrZ3JvdW5kOiMwMDAwMDA7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZmZmZmZmO1xufSJdfQ== */";
     /***/
   },
 
@@ -1318,7 +1338,7 @@
           title: 'CREW',
           url: '/artist'
         }, {
-          title: 'MESSAGAES',
+          title: 'MESSAGES',
           url: '/messages',
           icon: 'warning'
         }, {
@@ -1366,7 +1386,7 @@
           title: 'CREW',
           url: '/artist'
         }, {
-          title: 'MESSAGAES',
+          title: 'MESSAGES',
           url: '/messages',
           icon: 'warning'
         }, {
@@ -1552,18 +1572,117 @@
     var _shared_shared_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./shared/shared.module */
     "./src/app/shared/shared.module.ts");
+    /* harmony import */
+
+
+    var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @ionic-native/photo-viewer/ngx */
+    "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
+    /* harmony import */
+
+
+    var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! @ionic-native/file/ngx */
+    "./node_modules/@ionic-native/file/ngx/index.js");
 
     let AppModule = class AppModule {};
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
       entryComponents: [],
       imports: [_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]],
-      providers: [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], {
+      providers: [_ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_11__["File"], _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_10__["PhotoViewer"], _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], {
         provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"],
         useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"]
       }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/shared/back-header/back-header.component.scss":
+  /*!***************************************************************!*\
+    !*** ./src/app/shared/back-header/back-header.component.scss ***!
+    \***************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppSharedBackHeaderBackHeaderComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9iYWNrLWhlYWRlci9iYWNrLWhlYWRlci5jb21wb25lbnQuc2NzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/shared/back-header/back-header.component.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/shared/back-header/back-header.component.ts ***!
+    \*************************************************************/
+
+  /*! exports provided: BackHeaderComponent */
+
+  /***/
+  function srcAppSharedBackHeaderBackHeaderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BackHeaderComponent", function () {
+      return BackHeaderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+
+    let BackHeaderComponent = class BackHeaderComponent {
+      constructor(location) {
+        this.location = location;
+      }
+
+      ngOnInit() {}
+
+      back() {
+        this.location.back();
+      }
+
+    };
+
+    BackHeaderComponent.ctorParameters = () => [{
+      type: _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]
+    }];
+
+    BackHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-back-header',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./back-header.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/shared/back-header/back-header.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./back-header.component.scss */
+      "./src/app/shared/back-header/back-header.component.scss")).default]
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])], BackHeaderComponent);
     /***/
   },
 
@@ -1733,12 +1852,18 @@
 
 
     var ion2_calendar__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ion2_calendar__WEBPACK_IMPORTED_MODULE_6__);
+    /* harmony import */
+
+
+    var _back_header_back_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./back-header/back-header.component */
+    "./src/app/shared/back-header/back-header.component.ts");
 
     let SharedModule = class SharedModule {};
     SharedModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      declarations: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"]],
+      declarations: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"], _back_header_back_header_component__WEBPACK_IMPORTED_MODULE_7__["BackHeaderComponent"]],
       imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], ion2_calendar__WEBPACK_IMPORTED_MODULE_6__["CalendarModule"]],
-      exports: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"], ion2_calendar__WEBPACK_IMPORTED_MODULE_6__["CalendarModule"]],
+      exports: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"], ion2_calendar__WEBPACK_IMPORTED_MODULE_6__["CalendarModule"], _back_header_back_header_component__WEBPACK_IMPORTED_MODULE_7__["BackHeaderComponent"]],
       providers: [_ionic_native_camera_ngx__WEBPACK_IMPORTED_MODULE_5__["Camera"]]
     })], SharedModule);
     /***/
@@ -1851,7 +1976,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/rohansarkar/Documents/Vishal/LiveApps/GMOS/gmos copy/src/main.ts */
+    /*! /Users/rohansarkar/Documents/Vishal/LiveApps/GMOS/gmosgit/src/main.ts */
     "./src/main.ts");
     /***/
   }

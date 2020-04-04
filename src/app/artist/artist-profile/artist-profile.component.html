@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-back-header></app-back-header>
 <ion-content>
 	<div>
-		<div><img class="w-100" src="../../assets/images/talent1.png">
+		<div><img class="w-100" src="../../../assets/images/talent1.png" (click)="show('../../../assets/images/talent1.png')">
 			<ion-row>
 				<ion-col size="2">
 					<a href="mailto:user@gmail.com?Subject=Hello%20user%20name" target="_top" class="p-3"
@@ -13,32 +13,34 @@
 						data-original-title="Call now"><i class="fas fa-phone   fa-rotate-90 text-secondary"></i></a>
 				</ion-col>
 				<ion-col size="2">
-					<a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" class="p-3" data-toggle="tooltip" data-placement="top" title=""
-						data-original-title="Share profile"><i class="fas fa-share-alt fa-1x text-secondary"></i></a>
+					<span class="p-3" data-toggle="tooltip" data-placement="top" title=""
+						data-original-title="Share profile"><i class="fas fa-share-alt fa-1x text-secondary"></i></span>
 				</ion-col>
 				<ion-col size="2">
-					<span class="p-3"  data-toggle="tooltip" data-placement="top" title=""
+					<span class="p-3" [routerLink]="'/messages/chat-board'" data-toggle="tooltip" data-placement="top" title=""
 						data-original-title="Message now"><i class="fas fa-comments fa-1x text-secondary"></i></span>
 				</ion-col>
 				<ion-col size="2">
 
 				</ion-col>
 				<ion-col size="2">
-					<a class="p-3" href="message.html" data-toggle="tooltip" data-placement="top" title=""
-						data-original-title="Message now"><i class="far fa-heart fa-1x text-secondary"></i></a>
+					<span class="p-3"  data-toggle="tooltip" data-placement="top" title=""
+						data-original-title="Message now"><i class="far fa-heart fa-1x text-secondary"></i></span>
 				</ion-col>
 			</ion-row>
 		</div>
 		<div style="padding: 3px">
 			<div class="col-lg-12">
-				<h5 class="card-title">Ben Paul,25</h5>
-				<span class="text-muted">33322 Sandhill Cir, Albany, MN 56307, USA</span>
-				<span class="text-muted">Male, 5'8", 55 lb, African American</span>
+				<h5 class="card-title">Ben Paul, 25</h5>
+				<span class="text-muted size-font">Albany, MN 56307</span>
 				<div>
-					<span class="text-muted">Joined on 16 October 2019</span>
+				<span class="text-muted size-font">Male, 5'8", 55 lb, African American</span>
+				</div>
+				<div>
+					<span class="text-muted size-font">Joined on 09/16/2019</span>
 				</div>
 				<br>
-				<span class="text-muted">
+				<span class="text-muted size-font">
 					It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page
 					When Looking At Its Layout. The Point Of using Lorem Ipsum Is That It Has A More-or-less Normal
 					Distribution Of Letters. As Opposed
@@ -48,16 +50,16 @@
 				<h5 class="card-title">Photos/Videos</h5>
 				<ion-row>
 					<ion-col>
-						<img src="assets/images/talent1.png">
+						<img src="../../../assets/images/talent1.png" (click)="show('../../../assets/images/talent1.png')">
 					</ion-col>
 					<ion-col>
-						<img src="assets/images/talent1.png">
+						<img src="../../../assets/images/talent1.png" (click)="show('../../../assets/images/talent1.png')">
 					</ion-col>
 					<ion-col>
-						<img src="assets/images/talent1.png">
+						<img src="../../../assets/images/talent1.png" (click)="show('../../../assets/images/talent1.png')">
 					</ion-col>
 					<ion-col>
-						<img src="assets/images/talent1.png">
+						<img src="../../../assets/images/talent1.png" (click)="show('../../../assets/images/talent1.png')">
 					</ion-col>
 				</ion-row>
 			</div>
@@ -65,40 +67,40 @@
 				<h5 class="card-title">Rating & Reviews</h5>
 				<div class="mb-3">
 					<small class="bg-success text-light rounded-sm p-1">5 <i class="fas fa-star ml-1"></i></small>
-					<strong class="ml-2"><span>Justin Giegerich</span>, Plainfield, 20 July 2018</strong><br>
-					<span class="text-muted">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
+					<strong class="ml-2 size-font"><span>Justin Giegerich</span>, Plainfield, 09/16/2019</strong><br>
+					<span class="text-muted size-font">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
 						luctus nulla, a ultrices nunc consequat at. Donec id accumsan nulla. Donec lacinia, mauris
 						id interdum pharetra, felis leo ullamcorper arcu, a ullamcorper augue erat ac eros.
 						Curabitur quis ligula accumsan, mattis felis non, rhoncus neque.</span>
 				</div>
 				<div class="mb-3">
 					<small class="bg-success text-light rounded-sm p-1">5 <i class="fas fa-star ml-1"></i></small>
-					<strong class="ml-2"><span>Justin Giegerich</span>, Plainfield, 20 July 2018</strong><br>
-					<span class="text-muted">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
+					<strong class="ml-2 size-font"><span>Justin Giegerich</span>, Plainfield, 09/16/2019</strong><br>
+					<span class="text-muted size-font">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
 						luctus nulla, a ultrices nunc consequat at. Donec id accumsan nulla. Donec lacinia, mauris
 						id interdum pharetra, felis leo ullamcorper arcu, a ullamcorper augue erat ac eros.
 						Curabitur quis ligula accumsan, mattis felis non, rhoncus neque.</span>
 				</div>
 				<div class="mb-3">
 					<small class="bg-success text-light rounded-sm p-1">5 <i class="fas fa-star ml-1"></i></small>
-					<strong class="ml-2"><span>Justin Giegerich</span>, Plainfield, 20 July 2018</strong><br>
-					<span class="text-muted">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
+					<strong class="ml-2 size-font"><span>Justin Giegerich</span>, Plainfield, 09/16/2019</strong><br>
+					<span class="text-muted size-font">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
 						luctus nulla, a ultrices nunc consequat at. Donec id accumsan nulla. Donec lacinia, mauris
 						id interdum pharetra, felis leo ullamcorper arcu, a ullamcorper augue erat ac eros.
 						Curabitur quis ligula accumsan, mattis felis non, rhoncus neque.</span>
 				</div>
 				<div class="mb-3">
 					<small class="bg-success text-light rounded-sm p-1">5 <i class="fas fa-star ml-1"></i></small>
-					<strong class="ml-2"><span>Justin Giegerich</span>, Plainfield, 20 July 2018</strong><br>
-					<span class="text-muted">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
+					<strong class="ml-2 size-font"><span>Justin Giegerich</span>, Plainfield, 09/16/2019</strong><br>
+					<span class="text-muted size-font">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
 						luctus nulla, a ultrices nunc consequat at. Donec id accumsan nulla. Donec lacinia, mauris
 						id interdum pharetra, felis leo ullamcorper arcu, a ullamcorper augue erat ac eros.
 						Curabitur quis ligula accumsan, mattis felis non, rhoncus neque.</span>
 				</div>
 				<div class="mb-3">
 					<small class="bg-success text-light rounded-sm p-1">5 <i class="fas fa-star ml-1"></i></small>
-					<strong class="ml-2"><span>Justin Giegerich</span>, Plainfield, 20 July 2018</strong><br>
-					<span class="text-muted">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
+					<strong class="ml-2 size-font"><span>Justin Giegerich</span>, Plainfield, 09/16/2019</strong><br>
+					<span class="text-muted size-font">Ut sed libero sit amet eros tristique ornare. Vestibulum malesuada
 						luctus nulla, a ultrices nunc consequat at. Donec id accumsan nulla. Donec lacinia, mauris
 						id interdum pharetra, felis leo ullamcorper arcu, a ullamcorper augue erat ac eros.
 						Curabitur quis ligula accumsan, mattis felis non, rhoncus neque.</span>

@@ -1,11 +1,4 @@
-<ion-header>
-	<ion-toolbar style="--background: #000000;">
-	  <ion-buttons slot="end">
-		<ion-menu-button style="--color:#ffffff"></ion-menu-button>
-	  </ion-buttons>
-	  <ion-img class="logoIcon" src="assets/images/logo.png" slot="start"></ion-img>
-	</ion-toolbar>
-  </ion-header>
+<app-header></app-header>
 
 <ion-content style="--background: #F5F5F5 !important;">
 	<ion-item lines="full"  class="fixed-heading">
@@ -23,6 +16,8 @@
 			</ion-col>
 		</ion-row>
 	</ion-item>
+
+	
 	<div style="margin-top: 55px;" (click)="profile()">
 	<ion-row style="width: 100%" class="shadow-sm">
 		<ion-col size="6" class="profilecol" >
@@ -32,14 +27,14 @@
 				</ion-img>
 				<div class="border-right">
 					<ion-card-header>
-						<ion-card-title>Miller Smith , 25</ion-card-title>
+						<ion-card-title class="size-font">Miller Smith , 25</ion-card-title>
 					</ion-card-header>
 					<ion-card-content>
-						<p>
+						<p class="size-font">
 							137 Teaticket Hwy, East Falmouth MA 2536
 						</p>
-						<p>
-							Female , 5'8', 55 lb
+						<p class="size-font">
+							Male , 5'8', 55 lb
 						</p>
 					</ion-card-content>
 					<ion-row></ion-row>
@@ -64,14 +59,14 @@
 				</ion-img>
 				<div class="border-right">
 					<ion-card-header>
-						<ion-card-title>Miller Smith , 25</ion-card-title>
+						<ion-card-title class="size-font">Miller Smith , 25</ion-card-title>
 					</ion-card-header>
 					<ion-card-content>
-						<p>
+						<p class="size-font">
 							137 Teaticket Hwy, East Falmouth MA 2536
 						</p>
-						<p>
-							Female , 5'8', 55 lb
+						<p class="size-font">
+							Male , 5'8', 55 lb
 						</p>
 					</ion-card-content>
 					<ion-row style="width: 100%;background:#F8F9FA" class="mt-2 mb-0">
@@ -88,26 +83,27 @@
 			</div>
 		</ion-col>
 	</ion-row>
+
 	<ion-row style="width: 100%" class="shadow-sm">
-		<ion-col size="6" class="profilecol" (click)="profile()">
+		<ion-col size="6" class="profilecol" >
 			<div class="profile">
 				<ion-img src="../../../assets/images/talent1.png" style="--border-radius:0px" alt="Please wait.."
 					class="actorImage">
 				</ion-img>
 				<div class="border-right">
 					<ion-card-header>
-						<ion-card-title>Miller Smith , 25</ion-card-title>
+						<ion-card-title class="size-font">Miller Smith , 25</ion-card-title>
 					</ion-card-header>
 					<ion-card-content>
-						<p>
+						<p class="size-font">
 							137 Teaticket Hwy, East Falmouth MA 2536
 						</p>
-						<p>
-							Female , 5'8', 55 lb
+						<p class="size-font">
+							Male , 5'8', 55 lb
 						</p>
 					</ion-card-content>
 					<ion-row></ion-row>
-					<ion-row style="width: 100%;background:#F8F9FA" class="mt-2 mb-0">
+					<ion-row style="width: 100%;background: #F8F9FA !important;" class="mt-2 mb-0">
 						<ion-col size="1"></ion-col>
 						<ion-col size="3">
 							<i class="fas fa-envelope fa-lg text-secondary"></i>
@@ -128,14 +124,14 @@
 				</ion-img>
 				<div class="border-right">
 					<ion-card-header>
-						<ion-card-title>Miller Smith , 25</ion-card-title>
+						<ion-card-title class="size-font">Miller Smith , 25</ion-card-title>
 					</ion-card-header>
 					<ion-card-content>
-						<p>
+						<p class="size-font">
 							137 Teaticket Hwy, East Falmouth MA 2536
 						</p>
-						<p>
-							Female , 5'8', 55 lb
+						<p class="size-font">
+							Male , 5'8', 55 lb
 						</p>
 					</ion-card-content>
 					<ion-row style="width: 100%;background:#F8F9FA" class="mt-2 mb-0">

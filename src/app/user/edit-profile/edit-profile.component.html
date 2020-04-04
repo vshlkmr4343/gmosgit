@@ -1,11 +1,4 @@
-<ion-header>
-	<ion-toolbar style="--background: #000000;">
-	  <ion-buttons slot="end">
-		<ion-menu-button style="--color:#ffffff"></ion-menu-button>
-	  </ion-buttons>
-	  <ion-img class="logoIcon" src="assets/images/logo.png" slot="start"></ion-img>
-	</ion-toolbar>
-</ion-header>
+<app-header></app-header>
 <ion-content>
 	<div class="container">
 		<div class="row">
@@ -23,10 +16,10 @@
 												<form>
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Use
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Use
 															account as *</label>
 														<div class="col-sm-6 col-lg-4">
-															<select class="form-control">
+															<select class="form-control size-font">
 																<option>Talent</option>
 																<option>Producer</option>
 																<option>Crew</option>
@@ -38,7 +31,7 @@
 														<div class="col-lg-8 offset-lg-4 col-sm-6 offset-sm-6">
 															<div class="input-group">
 																<div class="custom-file custom-file-photo" (click) ="addPhoto('profile')">
-																	<input type="file" class="custom-file-input"
+																	<input type="file" class="custom-file-input size-font"
 																		id="inputGroupFile02">
 																	<label class="custom-file-label"
 																		aria-describedby="inputGroupFileAddon02">
@@ -57,27 +50,27 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Full
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Full
 															name *</label>
 														<div class="col-sm-6 col-lg-4">
-															<input type="text" class="form-control" id=""
+															<input type="text" class="form-control size-font" id=""
 																value="Ben paul">
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Email
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Email
 															address *</label>
 														<div class="col-sm-6 col-lg-4">
-															<input type="text" class="form-control" id=""
+															<input type="text" class="form-control size-font" id=""
 																value="benpaul89@gmail.com">
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Display
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Display
 															email publicly</label>
 														<div class="col-sm-6 col-lg-8">
 															<div class="custom-control custom-switch">
@@ -96,24 +89,24 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Phone
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Phone
 															number *</label>
 														<div class="col-sm-6 col-lg-4">
-															<input type="text" class="form-control" id=""
+															<input type="text" class="form-control size-font" id=""
 																value="+1 9856 654 789">
 															<input type="text" class="form-control is-valid mt-3" id=""
 																value="898564">
 														</div>
 														<div
 															class="col-sm-6 col-lg-4 col-form-label offset-sm-6 offset-lg-0">
-															<span class="text-link">Verify now</span></div>
+															<span class="text-link size-font">Verify now</span></div>
 													</div>
 
 
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Display
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Display
 															phone publicly</label>
 														<div class="col-sm-6 col-lg-8">
 															<div class="custom-control custom-switch">
@@ -129,31 +122,31 @@
 													</div>
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Gender
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Gender
 															*</label>
 														<div class="col-sm-6 col-lg-4">
-															<select class="form-control">
+															<select class="form-control size-font">
 																<option value="1">Any</option>
 																<option value="2">Male</option>
 																<option value="3">Female</option>
 															</select>
 															<div class="invalid-feedback">
-																<div>Gender is required</div>
+																<div class="size-font">Gender is required</div>
 															</div>
 														</div>
 													</div>
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Location
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font" >Location
 															*</label>
 														<div class="col-sm-6 col-lg-4">
-															<input type="text" class="form-control" id="">
+															<input type="text" class="form-control size-font" id="">
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Display
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Display
 															address
 															publicly</label>
 														<div class="col-sm-6 col-lg-8">
@@ -171,29 +164,29 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">User
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">User
 															rating/Link to all
 															reviews *</label>
 														<div class="col-sm-6 col-lg-4">
-															<textarea class="form-control"></textarea>
+															<textarea class="form-control size-font"></textarea>
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">BIO
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">BIO
 															*</label>
 														<div class="col-sm-6 col-lg-4">
-															<textarea class="form-control"></textarea>
+															<textarea class="form-control size-font"></textarea>
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">IMDB/Social
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">IMDB/Social
 															media link</label>
 														<div class="col-sm-6 col-lg-4 d-flex">
-															<input type="text" class="form-control" id="">
+															<input type="text" class="form-control size-font" id="">
 															<button class="shadow-sm btn btn-primary"><i
 																	class="fas fa-plus"></i></button>
 														</div>
@@ -201,16 +194,16 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Website
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Website
 															link</label>
 														<div class="col-sm-6 col-lg-4">
-															<input type="text" class="form-control" id="">
+															<input type="text" class="form-control size-font" id="">
 														</div>
 													</div>
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Upload
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Upload
 															resume</label>
 														<div class="col-sm-6 col-lg-4">
 															<div class="input-group">
@@ -219,7 +212,7 @@
 																		id="inputGroupFile02">
 																	<label class="custom-file-label"
 																		
-																		aria-describedby="inputGroupFileAddon02">Choose
+																		aria-describedby="inputGroupFileAddon02 size-font">Choose
 																		file</label>
 																</div>
 															</div>
@@ -230,12 +223,12 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right">Additional
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right size-font">Additional
 															photo/video</label>
 														<div class="col-sm-6 col-lg-4 d-flex ">
 															<div class="input-group" (click)="addImage()">
 																<div class="custom-file custom-file-photo">
-																	<input type="file" class="custom-file-input"
+																	<input type="file" class="custom-file-input size-font"
 																		id="inputGroupFile04">
 																	<label class="custom-file-label"
 																		
@@ -261,69 +254,69 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right pt-0">Jobs
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right pt-0 size-font">Jobs
 															interested in</label>
 														<div class="col-sm-6 col-lg-4">
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck111">
-																<label class="form-check-label" for="defaultCheck111">
+																<label class="form-check-label size-font" for="defaultCheck111" >
 																	Ad department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck112">
-																<label class="form-check-label" for="defaultCheck112">
+																<label class="form-check-label size-font" for="defaultCheck112">
 																	Production department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck113">
-																<label class="form-check-label" for="defaultCheck113">
+																<label class="form-check-label size-font" for="defaultCheck113">
 																	Camera department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck114">
-																<label class="form-check-label" for="defaultCheck114">
+																<label class="form-check-label size-font" for="defaultCheck114">
 																	G&E department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck115">
-																<label class="form-check-label" for="defaultCheck115">
+																<label class="form-check-label size-font" for="defaultCheck115">
 																	Hmu department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck116">
-																<label class="form-check-label" for="defaultCheck116">
+																<label class="form-check-label size-font" for="defaultCheck116">
 																	Wardrobe department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck117">
-																<label class="form-check-label" for="defaultCheck117">
+																<label class="form-check-label size-font" for="defaultCheck117">
 																	Sound department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck118">
-																<label class="form-check-label" for="defaultCheck118">
+																<label class="form-check-label size-font" for="defaultCheck118">
 																	Art department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck119">
-																<label class="form-check-label" for="defaultCheck119">
+																<label class="form-check-label size-font" for="defaultCheck119">
 																	Transportation department
 																</label>
 															</div>
@@ -332,69 +325,69 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-6 col-lg-4 col-form-label text-sm-right pt-0">Experienced
+															class="col-sm-6 col-lg-4 col-form-label text-sm-right pt-0 size-font">Experienced
 															in</label>
 														<div class="col-sm-6 col-lg-4">
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck211">
-																<label class="form-check-label" for="defaultCheck211">
+																<label class="form-check-label size-font" for="defaultCheck211">
 																	Ad department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck212">
-																<label class="form-check-label" for="defaultCheck212">
+																<label class="form-check-label size-font" for="defaultCheck212">
 																	Production department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck213">
-																<label class="form-check-label" for="defaultCheck213">
+																<label class="form-check-label size-font" for="defaultCheck213">
 																	Camera department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck214">
-																<label class="form-check-label" for="defaultCheck214">
+																<label class="form-check-label size-font" for="defaultCheck214">
 																	G&e department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck215">
-																<label class="form-check-label" for="defaultCheck215">
+																<label class="form-check-label size-font" for="defaultCheck215">
 																	Hmu department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck216">
-																<label class="form-check-label" for="defaultCheck216">
+																<label class="form-check-label size-font" for="defaultCheck216">
 																	Wardrobe department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck217">
-																<label class="form-check-label" for="defaultCheck217">
+																<label class="form-check-label size-font" for="defaultCheck217">
 																	Sound department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck218">
-																<label class="form-check-label" for="defaultCheck218">
+																<label class="form-check-label size-font" for="defaultCheck218">
 																	Art department
 																</label>
 															</div>
 															<div class="form-check">
 																<input class="form-check-input" type="checkbox" value=""
 																	id="defaultCheck219">
-																<label class="form-check-label" for="defaultCheck219">
+																<label class="form-check-label size-font" for="defaultCheck219">
 																	Transportation department
 																</label>
 															</div>
@@ -404,7 +397,7 @@
 
 													<div class="form-group row">
 														<label
-															class="col-sm-4 col-lg-2 col-form-label text-sm-right pt-0">Equipment
+															class="col-sm-4 col-lg-2 col-form-label text-sm-right pt-0 size-font">Equipment
 															owned </label>
 														<div class="col-sm-8 col-lg-10">
 															<div
@@ -412,7 +405,7 @@
 																<input type="radio" id="customRadioInline17"
 																	name="customRadioInline17"
 																	class="custom-control-input">
-																<label class="custom-control-label"
+																<label class="custom-control-label size-font"
 																	for="customRadioInline17">Yes</label>
 															</div>
 															<div
@@ -421,7 +414,7 @@
 																	name="customRadioInline17"
 																	class="custom-control-input">
 																<label class="custom-control-label"
-																	for="customRadioInline18">No</label>
+																	for="customRadioInline18 size-font">No</label>
 															</div>
 														</div>
 													</div>
@@ -436,7 +429,7 @@
 															<button class="btn btn-primary shadow-sm">SUBMIT</button>
 														</div>
 													</div>
-													<div class="mt-3 text-muted">* marked fields are mandatory</div>
+													<div class="mt-3 text-muted size-font">* marked fields are mandatory</div>
 												</form>
 											</div>
 										</div>

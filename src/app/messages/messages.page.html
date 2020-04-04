@@ -1,11 +1,5 @@
-<ion-header>
-	<ion-toolbar style="--background: #000000;">
-	  <ion-buttons slot="end">
-		<ion-menu-button style="--color:#ffffff"></ion-menu-button>
-	  </ion-buttons>
-	  <ion-img class="logoIcon" src="assets/images/logo.png" slot="start"></ion-img>
-	</ion-toolbar>
-</ion-header>
+<app-header></app-header>
+
 <ion-content  style="--background: #F5F5F5 !important;">
   <ion-item lines="full" class="fixed-heading">
     <ion-row style="width: 100%;">
@@ -32,14 +26,14 @@
       <ion-col size="8">
       <ion-label class="msg-label">
         <h3 class="sender-name">Olivia Smith</h3>
-        <p class="message">Last Messages here</p>
+        <p class="size-font">Last Messages here</p>
       </ion-label>
       </ion-col>
       <ion-col size="2">
         </ion-col>
       </ion-row>
     </ion-item>
-    <ion-item lines="none"  style="--background: #F5F5F5 !important; margin-left: -12px;" >
+    <ion-item lines="none"  style="--background: #F5F5F5 !important; margin-left: -12px;" (click)="chatboard()">
       <ion-row style="width: 100%;">
         <ion-col size="2">
       <ion-avatar class="avatar-image1">
@@ -50,7 +44,7 @@
       <ion-col size="8">
       <ion-label class="msg-label">
         <h3 class="sender-name">Olivia Smith</h3>
-        <p class="message">Last Messages here</p>
+        <p class="size-font">Last Messages here</p>
       </ion-label>
       </ion-col>
       <ion-col size="2">
@@ -69,7 +63,7 @@
       <ion-col size="8">
       <ion-label>
         <h3 class="sender-name">Olivia Smith</h3>
-        <p class="message">Last Messages here</p>
+        <p class="size-font">Last Messages here</p>
       </ion-label>
       </ion-col>
       <ion-col size="2">
@@ -80,7 +74,7 @@
       </ion-row>
     </ion-item>
     </ion-card>
-    <ion-item lines="none"  style="--background: #F5F5F5 !important; margin-left: -12px;" >
+    <ion-item lines="none"  style="--background: #F5F5F5 !important; margin-left: -12px;" (click)="chatboard()">
       <ion-row style="width: 100%;">
         <ion-col size="2">
       <ion-avatar class="avatar-image1">
@@ -91,7 +85,7 @@
       <ion-col size="8">
       <ion-label class="msg-label">
         <h3 class="sender-name">Olivia Smith</h3>
-        <p class="message">Last Messages here</p>
+        <p class="size-font">Last Messages here</p>
       </ion-label>
       </ion-col>
       <ion-col size="2">
