@@ -1,0 +1,70 @@
+<ion-app>
+	<ion-split-pane contentId="main-content">
+		<ion-menu contentId="main-content" type="overlay">
+			<ion-item style="--padding: 0" color="dark">
+				<ion-avatar slot="start">
+					<img src="assets/images/talent1.png">
+				</ion-avatar>
+				<ion-label>
+					<h2>Dylan Larkin</h2>
+					<p>dylanlarkin@email.com</p>
+				</ion-label>
+			</ion-item>
+			<ion-content>
+				<ion-list *ngIf="!isSubmenuOpen" id="inbox-list">
+					<ion-menu-toggle auto-hide="false">
+						<div class="gigPost" [routerLink]="['gigs/post']">
+							<ion-icon name="add" color="light"></ion-icon>
+							<ion-label color="light">POST A GIG</ion-label>
+						</div>
+					</ion-menu-toggle>
+					<ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+						<ion-item *ngIf="p.title == 'MESSAGES' || p.title == 'NOTIFICATIONS'"
+							(click)="selectedIndex = i" lines="none" [routerLink]="[p.url]" detail="false"
+							[class.selected]="selectedIndex == i" class="bottomBorder">
+							<ion-badge slot="end" color="medium">11</ion-badge>
+							<ion-label color="light">{{p.title}}</ion-label>
+						</ion-item>
+
+						<ion-item
+							*ngIf="p.title != 'MESSAGES' && p.title != 'NOTIFICATIONS' && p.title != 'MY PROFILE' && p.title != 'MORE'"
+							(click)="selectedIndex = i" lines="none" routerDirection="root" [routerLink]="[p.url]"
+							detail="false" [class.selected]="selectedIndex == i" class="bottomBorder">
+							<ion-icon slot="end" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'" color="light">
+							</ion-icon>
+							<ion-label color="light">{{p.title}}</ion-label>
+						</ion-item>
+
+					</ion-menu-toggle>
+					<ion-item (click)="open('MY PROFILE')" lines="none" detail="false" class="bottomBorder">
+						<ion-label color="light">MY PROFILE</ion-label>
+						<ion-icon name="arrow-forward" slot="end" color="light"></ion-icon>
+					</ion-item>
+					<ion-item (click)="open('MORE')" lines="none" detail="false" class="bottomBorder">
+						<ion-label color="light">MORE</ion-label>
+						<ion-icon name="arrow-forward" slot="end" color="light"></ion-icon>
+					</ion-item>
+				</ion-list>
+				<ion-list *ngIf="isSubmenuOpen" id="inbox-list">
+					<ion-item class="bottomBorder" (click)="back()">
+						<ion-icon name="arrow-back" color="light"></ion-icon>
+						<ion-label color="light" style="padding-left:5px">BACK</ion-label>
+					</ion-item>
+
+					<ion-menu-toggle auto-hide="false" *ngFor="let s of subMenuPages; let j = index"
+						[routerLink]="[s.url]">
+						<ion-item lines="none" detail="false" [class.selected]="selectedIndex == j"
+							class="bottomBorder">
+							<ion-icon slot="end" [ios]="s.icon + '-outline'" [md]="s.icon + '-sharp'" color="light">
+							</ion-icon>
+							<ion-label color="light" *ngIf="s.title !='LOGOUT'">{{s.title}}</ion-label>
+							<ion-label color="light" *ngIf="s.title =='LOGOUT'" (click)="logout()">{{s.title}}
+							</ion-label>
+						</ion-item>
+					</ion-menu-toggle>
+				</ion-list>
+			</ion-content>
+		</ion-menu>
+		<ion-router-outlet id="main-content"></ion-router-outlet>
+	</ion-split-pane>
+</ion-app>

@@ -1,0 +1,27 @@
+<app-header [title] ="'signin'"></app-header>
+<ion-content>
+  <div>
+    <div class="modal-header text-center d-block border-0">
+      <h5 class="modal-title w-100">Sign In</h5>
+      <div class="w-100 text-muted">Instruction goes here</div>
+    </div>
+    <div class="modal-body p-4">
+      <form action="home.html">
+        <div class="form-group">
+          <label for="" class="size-font">Email</label>
+          <input type="email" class="form-control size-font" id="" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="" class="size-font">Password</label>
+          <input type="password" class="form-control size-font" placeholder="Password">
+        </div>
+        <div class="mb-3"><span (click)="forgotPassword()" class="size-font">Forgot Password?</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block shadow-sm" (click)="signin()">SIGN IN</button>
+      </form>
+    </div>
+    <div (click)="signup()" class="modal-footer border-0 bg-light px-3"> <span class="align-middle mr-auto size-font">Do not have an
+        account?</span><span 
+        class="btn btn-danger shadow-sm shadow-sm" (click)="signup()">SIGN UP</span> </div>
+  </div>
+</ion-content>
