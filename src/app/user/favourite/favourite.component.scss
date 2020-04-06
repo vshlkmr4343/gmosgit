@@ -1,7 +1,6 @@
 .head-text {
     margin-top: 5px;
     margin-bottom: auto;
-    font-size: 15px;
     margin-left: -5px;
     margin-right: auto;
   }
@@ -157,6 +156,10 @@
   .box-heading{
     margin-top: 0px;
     margin-bottom: 0rem;
+  }
+  .box-content{
+    padding-bottom: 10px;
+    padding-left: 0px;
   }
   .box{
     overflow-y: scroll;
